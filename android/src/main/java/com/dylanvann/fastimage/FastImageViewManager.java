@@ -99,9 +99,9 @@ class FastImageViewManager extends SimpleViewManager<FastImageViewWithUrl> imple
             if(source.getString("placeholderImage").equals("defaultAvatar")){
                 resourceId = R.drawable.default_avatar;
             }
-//            else if(source.getString("placeholderImage").equals("defaultImage")){
-//                resourceId = R.drawable.default_image;
-//            }
+            else if(source.getString("placeholderImage").equals("defaultImage")){
+                resourceId = R.drawable.default_image;
+            }
         }
         if (requestManager != null) {
             requestManager
