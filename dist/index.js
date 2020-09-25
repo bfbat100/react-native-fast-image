@@ -1,7 +1,7 @@
 import _extends from '@babel/runtime/helpers/extends';
 import React, { forwardRef, memo } from 'react';
 import { NativeModules, StyleSheet, requireNativeComponent, Image, View } from 'react-native';
-
+//
 const FastImageViewNativeModule = NativeModules.FastImageView;
 const resizeMode = {
   contain: 'contain',
