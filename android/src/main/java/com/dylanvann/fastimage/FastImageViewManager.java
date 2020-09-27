@@ -72,6 +72,11 @@ class FastImageViewManager extends SimpleViewManager<FastImageViewWithUrl> imple
 
         //final GlideUrl glideUrl = FastImageViewConverter.getGlideUrl(view.getContext(), source);
         final FastImageSource imageSource = FastImageViewConverter.getImageSource(view.getContext(), source);
+        if(imageSource.getUri().toString().equals("")){
+            // uri 为空
+            view.setImageDrawable(null);
+            return;
+        }
         final GlideUrl glideUrl = imageSource.getGlideUrl();
 
         // Cancel existing request.
